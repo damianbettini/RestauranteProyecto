@@ -80,17 +80,9 @@ public class WebSecurityConfig {
         return auth;
     }
 
-   /* @Bean
-    public UserDetailsService userDetailsService() {
-        InMemoryUserDetailsManager user = new InMemoryUserDetailsManager();
-        user.createUser(User.withUsername("sharon")
-                .password(passwordEncoder().encode("12345"))
-                .roles("user")
-                .build());
-
-        return user;
-    }*/
-
-
 
 }
+
+
+
+
