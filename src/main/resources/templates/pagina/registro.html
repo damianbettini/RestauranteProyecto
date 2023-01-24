@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Registro de Usuario</title>
+
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Los iconos tipo Solid de Fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Nuestro css-->
+  <link rel="stylesheet" type="text/css" href="/css/index.css" th:href="@{/css/index.css}">
+
+</head>
+<body>
+<div class="modal-dialog text-center">
+  <div class="col-sm-8 main-section">
+    <div class="modal-content">
+      <div class="col-12 logo-img">
+        <img src="/img/logo.png" th:src="@{/img/logo.png}"/>
+        <div th:if="${param.exito}">
+          <div class="alert alert-info">
+            Se ha registrado exitosamente a la aplicacion
+          </div>
+        </div>
+      <h1>Registrate</h1>
+      <form class="col-12" th:action="@{/registro}" method="post" th:object="${usuario}">
+
+        <div class="form-group">
+          <label class="control-label" for="nombre">Nombre: </label>
+          <input id="nombre" type="text" class="form-control" th:field="*{nombre}" required autofocus="autofocus">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="apellido">Apellido: </label>
+          <input id="apellido" type="text" class="form-control" th:field="*{apellido}" required autofocus="autofocus">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="email">Email: </label>
+          <input id="email" type="email" class="form-control" th:field="*{email}" required autofocus="autofocus">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label" for="clave">Clave: </label>
+          <input id="clave" type="password" class="form-control" th:field="*{clave}" required autofocus="autofocus">
+        </div>
+        <button type="submit" class="btn btn-success">Registrarse </button>
+
+
+      </form>
+        <div class="col-12 forgot">
+
+          <span>Si estas registrado <a th:href="@{/login}">Inicia sesion aqui</a> </span>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
