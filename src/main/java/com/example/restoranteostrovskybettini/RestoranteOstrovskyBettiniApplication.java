@@ -16,7 +16,7 @@ public class RestoranteOstrovskyBettiniApplication{
         UsuarioRepository usuarioRepository = context.getBean(UsuarioRepository.class);
 
         RestauranteService resto = new RestauranteService(context);
-        resto.crearRestorante();
+        //resto.crearRestorante();
 
     }
 }
