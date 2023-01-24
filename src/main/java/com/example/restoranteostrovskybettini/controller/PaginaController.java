@@ -44,6 +44,10 @@ public class PaginaController {
         modelo.addAttribute("bebidas",bebidaService.listarTodasLasBebidas());
         return "/pagina/menu";
     }
+    @GetMapping("/logout")
+    public String cerrarSesion(){
+        return "redirect:/login";
+    }
 
 
 
