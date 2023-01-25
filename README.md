@@ -39,7 +39,10 @@ git clone https://github.com/sharonOstrovsky/Restaurante.git
 ```
 
 </li>
-<li>Crear una Base de Datos en Postgres con el nombre `resto`
+<li>Crear una Base de Datos en Postgres con el nombre 
+
+>resto 
+
 </li>
 <li>Cambiar usuario y contraseña en application.properties
 
