@@ -1,4 +1,65 @@
-# Hola Hector!
+ #  **Restaurante** 
+
+
+## Descripción
+
+La aplicación es un inventario de un restarurante
+donde se puede:
+<ul>
+<li>Inicio de Sesión y Registro de un nuevo usuario</li>
+<li>Visualizar el menu con sus respectivos precios.</li>
+<li>Cargar nuevas bebidas y comidas</li>
+<li>Editar bebidas y comidas ya existentes</li>
+<li>Eliminar bebidas y comidas existentes</li>
+<li>Todos los cambios se veran reflejados en el menu</li>
+<li>Cerrar Sesión</li>
+</ul>
+
+## Tecnologías Utilizadas
+
+<ul type="square">
+<li>Java</li>
+<li>Spring Boot</li>
+<li>Spring Security</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>Docker</li>
+<li>Postgres</li>
+</ul>
+
+## Instalacion
+
+Pasos a Seguir: 
+
+<ol>
+<li>Clonar el Repositorio
+
+```
+git clone https://github.com/sharonOstrovsky/Restaurante.git
+```
+
+</li>
+<li>Crear una Base de Datos en Postgres con el nombre "resto"</li>
+<li>Cambiar usuario y contraseña en application.properties
+
+```
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.url=jdbc:postgresql://localhost:5432/resto
+spring.datasource.username=nombreUsuario
+spring.datasource.password=contraseña
+spring.jpa.hibernate.ddl-auto=create
+
+loggin.level.org.hibernate.sql=DEBAG
+
+loggin.level.org.hibernate.type=TRACE
+spring.main.allow-circular-references=true
+```
+
+</li>
+</ol>
+
+
+## Pasos Realizados
    1. Crear Restorante de comida rapida  
    2. Hacer Entidades:  
     A. Restorante   
@@ -21,8 +82,8 @@
    5. Hacer Controllers: <br>
    A. ComidaController(CRUD)   <br>
    B. BebidaController(CRUD)   
-   C. UsuarioController()    <br>
-   D. PaginaController()  <br>
+   C. UsuarioController    <br>
+   D. PaginaController <br>
    
    6. Hacer Repository   <br>
       A.ComidaRepository  <br>
@@ -43,5 +104,10 @@
 
    12.  Subir a Render <br> 
              
+## Autores
 
+<ul>
+<li>Sharon Ostrovsky</li>
+<li>Damian Bettini</li>
+</ul>
 
