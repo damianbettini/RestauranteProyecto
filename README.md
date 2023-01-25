@@ -1,4 +1,4 @@
- #  **Restaurante** 
+ # 	:fork_and_knife: **Restaurante** 
 
 
 ## Descripción
@@ -27,7 +27,7 @@ donde se puede:
 <li>Postgres</li>
 </ul>
 
-## Instalacion
+## Instalación
 
 Pasos a Seguir: 
 
@@ -62,7 +62,7 @@ spring.main.allow-circular-references=true
 ## Pasos Realizados
    1. Crear Restorante de comida rapida  
    2. Hacer Entidades:  
-    A. Restorante   
+    A. Restaurante   
     B. User    
     C. Comida   
     D. Bebida   
