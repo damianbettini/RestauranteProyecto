@@ -64,7 +64,7 @@ spring.main.allow-circular-references=true
 
 
 ## Pasos Realizados
-   1. Crear Restorante de comida rapida  
+   1. Crear Restaurante de comida rapida  
    2. Hacer Entidades:  
     A. Restaurante   
     B. User    
@@ -76,7 +76,7 @@ spring.main.allow-circular-references=true
       A. ComidaService  
       B. UserService     
       C. BebidaService   
-      D. RestoranteService <br>
+      D. RestauranteService <br>
    4. Hacer Interfaces de Servicios: <br>
    A. BebidasServiceImp <br>
    B. ComidaServiceImp <br>
