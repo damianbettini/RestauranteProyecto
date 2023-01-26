@@ -28,17 +28,19 @@
 
         </div>
         <div class="col-sm-7">
-            <form th:action="@{/logout}" method="post">
-                <button type="submit" class="btn btn-outline-dark">  Cerrar Sesión </button>
-           <!-- <input type="submit" value="Cerrar Sesion"/> -->
-            </form>
+
         </div>
         <div class="col-sm-5">
             <a href="http://localhost:8080/bebidas"> <button class="btn btn-outline-dark" type="submit">Control Bebida</button></a>
             <a href="http://localhost:8080/comidas"> <button class="btn btn-outline-dark" type="submit">Control Comida</button></a>
 
         </div>
-
+        <div class="container d-flex justify-content-left">
+            <form th:action="@{/logout}" method="post">
+                <button type="submit" class="btn btn-dark">  Cerrar Sesión </button>
+                <!-- <input type="submit" value="Cerrar Sesion"/> -->
+            </form>
+        </div>
     </div>
 </div>
 
